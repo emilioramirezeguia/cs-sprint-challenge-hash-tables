@@ -9,6 +9,26 @@ def reconstruct_trip(tickets, length):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    # empty dictionary where we'll save our tickets
+    dictionary = {}
+    routes = []
+    # populating our hash table
+    for i in range(length):
+        dictionary[tickets[i].source] = tickets[i].destination
 
-    return route
+    # add the starting ticket our route
+    routes.append(dictionary["NONE"])
+    # reconstructing our route
+    for i in range(length):
+        pass
+
+    print("Dictionary", dictionary)
+    return routes
+
+    # return route
+ticket_1 = Ticket("NONE", "PDX")
+ticket_2 = Ticket("PDX", "DCA")
+ticket_3 = Ticket("DCA", "NONE")
+tickets = [ticket_1, ticket_2, ticket_3]
+result = reconstruct_trip(tickets, 3)
+print(result)

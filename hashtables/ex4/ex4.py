@@ -2,7 +2,33 @@ def has_negatives(a):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    positives = {}
+    negatives = {}
+    dictionary = {}
+    result = []
+
+    # for x in a:
+    #     dictionary[x] = -x
+
+    # for y in a:
+    #     if dictionary[y] in dictionary:
+    #         result.append(abs(y))
+
+    # return result
+
+    for i in range(len(a)):
+        if a[i] >= 0:
+            if a[i] not in positives:
+                positives[a[i]] = 0
+            else:
+                positives[a[i]] = 0
+        else:
+            if a[i] not in negatives:
+                negatives[a[i]] = 0
+
+    for key in positives:
+        if -key in negatives:
+            result.append(key)
 
     return result
 
