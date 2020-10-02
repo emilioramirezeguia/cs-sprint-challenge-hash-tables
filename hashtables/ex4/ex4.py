@@ -4,7 +4,17 @@ def has_negatives(a):
     """
     positives = {}
     negatives = {}
+    dictionary = {}
     result = []
+
+    # for x in a:
+    #     dictionary[x] = -x
+
+    # for y in a:
+    #     if dictionary[y] in dictionary:
+    #         result.append(abs(y))
+
+    # return result
 
     for i in range(len(a)):
         if a[i] >= 0:

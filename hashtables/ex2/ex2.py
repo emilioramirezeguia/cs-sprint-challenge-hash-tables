@@ -14,16 +14,15 @@ def reconstruct_trip(tickets, length):
     routes = []
     # populating our hash table
     for i in range(length):
-        if tickets[i].source not in dictionary:
-            dictionary[tickets[i].source] = tickets[i].destination
+        dictionary[tickets[i].source] = tickets[i].destination
 
     # add the starting ticket our route
     routes.append(dictionary["NONE"])
     # reconstructing our route
-    # while i < length:
-    #     if dictionary
+    for i in range(length):
+        pass
 
-    print("Dictionary at 0", dictionary[0])
+    print("Dictionary", dictionary)
     return routes
 
     # return route
